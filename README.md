@@ -1,5 +1,5 @@
 <p align="center">
-  <h1 align="center">A FORK FOR Huawei Push Kit Flutter Plugin</h1>
+  <h1 align="center">A FORK FOR Huawei Push Kit Flutter Plugin to work with Gradle 9.x.x </h1>
 </p>
 <p>
   <h1 align="center">use it under your responsibility only</h1>
