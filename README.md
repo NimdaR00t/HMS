@@ -3,6 +3,7 @@
 </p>
 <p>
   <h1 align="center">use it under your responsibility only</h1>
+  check android/how.to.md for help
 </p>
 <p align="center">
   <a href="https://pub.dev/packages/huawei_push"><img src="https://img.shields.io/pub/v/huawei_push?style=for-the-badge" alt="pub.dev version"></a>
