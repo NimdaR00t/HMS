@@ -1,0 +1,49 @@
+group "com.huawei.hms.flutter.push"
+version "1.0"
+
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+        maven { url "https://developer.huawei.com/repo/" }
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:8.7.3"
+    }
+}
+
+rootProject.allprojects {
+    repositories {
+        google()
+        mavenCentral()
+        maven { url "https://developer.huawei.com/repo/" }
+    }
+}
+
+apply plugin: "com.android.library"
+
+android {
+    namespace "com.huawei.hms.flutter.push"
+    compileSdk 34
+
+    defaultConfig {
+        minSdk 21
+        targetSdk 34
+    }
+
+    lint {
+        disable "InvalidPackage"
+        abortOnError false
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}
+
+dependencies {
+    implementation "com.huawei.hms:push:6.12.0.300"
+    implementation "com.facebook.fresco:fresco:3.4.0"
+    implementation "androidx.annotation:annotation:1.9.1"
+}
